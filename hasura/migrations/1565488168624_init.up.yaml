@@ -1,0 +1,7 @@
+- args:
+    allowlist: []
+    functions: []
+    query_collections: []
+    remote_schemas: []
+    tables: []
+  type: replace_metadata

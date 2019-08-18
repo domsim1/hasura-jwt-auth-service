@@ -1,0 +1,5 @@
+node_modules/
+.env
+.env.test
+build/
+hasura/schema.graphql
