@@ -40,7 +40,7 @@ export async function createUser(
     email,
     password: hashedPassword,
   };
-  const queryRes = await fetch(env.HAZURA_GRAPHQL_ENDPOINT, {
+  const queryRes = await fetch(env.HASURA_GRAPHQL_ENDPOINT, {
     method: 'post',
     headers: {
       'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ export async function loginUser(email: string, password: string) {
   const queryVars = {
     email,
   };
-  const queryRes = await fetch(env.HAZURA_GRAPHQL_ENDPOINT, {
+  const queryRes = await fetch(env.HASURA_GRAPHQL_ENDPOINT, {
     method: 'post',
     headers: {
       'Content-Type': 'application/json',
